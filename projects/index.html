@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Kyber</title>
+  <meta charset="utf-8" />
+  <meta name="google-site-verification" content="12aR_338F0VaglKbfvPLczdZV_Ej6AVx9Ef7M4ULfLU" />
+  <meta name="description" content="Kyber" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet" media="print"
+    onload="this.media='all'" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="stylesheet" href="/static/style_variables.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Barlow", sans-serif;
+      font-optical-sizing: auto;
+      height: 100dvh;
+      width: 100%;
+      box-sizing: border-box;
+      flex-shrink: 0;
+      background-color: rgba(var(--background));
+      color: rgb(var(--text));
+      transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* IE/Edge */
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-scrollbar: display: none;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      /* Chrome, Safari, Opera */
+      margin: 0;
+    }
+
+    ::view-transition-group(*) {
+      animation-duration: 150ms;
+    }
+
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+      /* animation: none; */
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    textarea,
+    input {
+      line-height: 1.5;
+      font-size-adjust: 0.5;
+      font-family: inherit;
+    }
+
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+
+    div {
+      min-width: 0;
+    }
+
+    button p {
+      font-family: inherit;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      color: inherit;
+      min-width: 0;
+      box-sizing: border-box;
+      /* add these: */
+      padding: 0;
+      border: none;
+      background: none;
+      appearance: none;
+    }
+
+
+
+    input[type="file"]::file-selector-button {
+      background: transparent;
+      color: transparent;
+      border: none;
+    }
+
+
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 1000px transparent inset;
+      -webkit-text-fill-color: inherit;
+      caret-color: inherit;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
+    .reload-indicator {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      display: none;
+      align-items: center;
+      gap: 10px;
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+      z-index: 99999;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .reload-indicator.visible {
+      display: flex;
+    }
+
+    .reload-spinner {
+      width: 14px;
+      height: 14px;
+      border: 2px solid #333;
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="/static/projects/style.css" />
+<link rel="stylesheet" href="/static/style_variables.css" /></head>
+
+<body>
+  <div id="reload-indicator" class="reload-indicator">
+    <div class="reload-spinner"></div>
+    <span>Reloading... <span id="reload-timer">0.0</span>s</span>
+  </div>
+  <main id="contents" style="display: contents"><div  id="Flex_S7ezG2-gk" class="lay_q9cYN3 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<div  id="Flex_nuQjl1-gk" class="lay_UlfIZ1 pos_e8wtf3 mapa_rPfvm1 vis_SWFkJ2 ">
+<p  id="Text_bxNPe-gk" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_NyuBQ1 ">Projects</p>
+<button  id="CtxB_v2AiU1-gk" class="lay_1I8dE4 pos_e8wtf3 mapa_CrkEb2 vis_gyebf intr_m5kAX3 ">
+<i  id="Icon_ECBft-gk" class="bi bi-chevron-down lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_8Cij42 ">
+</i>
+</button>
+</div>
+<div  id="Flex_TRHbF-gk" class="lay_jmMXQ pos_e8wtf3 mapa_rPfvm1 vis_SWFkJ2 ">
+<section  id="ryven" class="lay_UxUDR1 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<div  id="Flex_gZm544-gk" class="lay_kgftF3 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<div  id="Flex_NmtNz1-gk" class="lay_x0VQK1 pos_e8wtf3 mapa_tFMrw3 vis_n6pJr2 ">
+<p  id="Text_NqwvQ4-gk" class="lay_5fIAI3 pos_e8wtf3 mapa_CrkEb2 vis_QagOS1 ">Ryven</p>
+<a  id="Redi_y5CCR1-gk" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 " href="https://ryven.kyber.run">
+<i  id="Icon_V5JPb4-gk" class="bi bi-link lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_N8Tfk ">
+</i>
+</a>
+</div>
+<p  id="Text_XtSdY1-gk" class="lay_BhpmX2 pos_e8wtf3 mapa_tFMrw3 vis_OV1ec1 ">Ryven is a modern Application Management Software for Web Applications. Combining Supabase, Postman, and Sentry into one cohesive solution.</p>
+<p  id="Text_h4CBZ4-gk" class="lay_aHPup pos_e8wtf3 mapa_tFMrw3 vis_Mvdqe1 ">453kb</p>
+
+</div>
+<div  id="Flex_nJ3zX4-gk" class="lay_hy5uF3 pos_e8wtf3 mapa_eoJ7b1 vis_SWFkJ2 ">
+<div  id="Flex_rIsO6-gk" class="lay_u7gPT4 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<img  id="Imag_ljPtg-gk" class="lay_CQSaD pos_e8wtf3 mapa_CrkEb2 vis_kOQcB4 " src="/assets/ry_editor.png"alt="Ryven">
+</img>
+</div>
+</div>
+</section>
+<section  id="assembler" class="lay_UxUDR1 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<div  id="Flex_0qKPY-gk" class="lay_kgftF3 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<div  id="Flex_7yYCb4-gk" class="lay_x0VQK1 pos_e8wtf3 mapa_tFMrw3 vis_n6pJr2 ">
+<p  id="Text_D53Ej-gk" class="lay_5fIAI3 pos_e8wtf3 mapa_CrkEb2 vis_QagOS1 ">Assembler</p>
+<a  id="Redi_h29io2-gk" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 " href="https://assembler.kyber.run">
+<i  id="Icon_sGwhf3-gk" class="bi bi-link lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_N8Tfk ">
+</i>
+</a>
+</div>
+<p  id="Text_YZlYJ-gk" class="lay_BhpmX2 pos_e8wtf3 mapa_tFMrw3 vis_OV1ec1 ">Assembler is a modern CLI and Chat UI for building and deploying Senet applications through LLMs and proprietary context.</p>
+<p  id="Text_zP4ee-gk" class="lay_aHPup pos_e8wtf3 mapa_tFMrw3 vis_Mvdqe1 ">234kb</p>
+
+</div>
+<div  id="Flex_Xy9DU1-gk" class="lay_hy5uF3 pos_e8wtf3 mapa_eoJ7b1 vis_SWFkJ2 ">
+<div  id="Flex_1q0gs3-gk" class="lay_u7gPT4 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<img  id="Imag_kYUaG4-gk" class="lay_CQSaD pos_e8wtf3 mapa_CrkEb2 vis_21Zvw2 " src="/assets/assembler.png"alt="Assembler">
+</img>
+</div>
+</div>
+</section>
+<section  id="senet" class="lay_UxUDR1 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<div  id="Flex_ZBHVX1-gk" class="lay_kgftF3 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<div  id="Flex_0gRE32-gk" class="lay_x0VQK1 pos_e8wtf3 mapa_tFMrw3 vis_n6pJr2 ">
+<p  id="Text_ovnHC2-gk" class="lay_5fIAI3 pos_e8wtf3 mapa_CrkEb2 vis_QagOS1 ">Senet</p>
+<a  id="Redi_CYJfq2-gk" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 " href="https://senet.run">
+<i  id="Icon_GtWk21-gk" class="bi bi-link lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_N8Tfk ">
+</i>
+</a>
+</div>
+<p  id="Text_qZDId2-gk" class="lay_BhpmX2 pos_e8wtf3 mapa_tFMrw3 vis_OV1ec1 ">Senet is a zero-dependency modern web framework for Zig. Build anything from simple ecommerce sites to full dashboards.</p>
+<p  id="Text_w19M62-gk" class="lay_aHPup pos_e8wtf3 mapa_tFMrw3 vis_Mvdqe1 ">276kb</p>
+
+</div>
+<div  id="Flex_kjT7x-gk" class="lay_hy5uF3 pos_e8wtf3 mapa_eoJ7b1 vis_SWFkJ2 ">
+<div  id="Flex_Edzrp2-gk" class="lay_u7gPT4 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<img  id="Imag_eedLS4-gk" class="lay_CQSaD pos_e8wtf3 mapa_CrkEb2 vis_pyq902 " src="/assets/senet.png"alt="Senet">
+</img>
+</div>
+</div>
+</section>
+<section  id="vapor-ui" class="lay_UxUDR1 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<div  id="Flex_ZNP2f4-gk" class="lay_kgftF3 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<div  id="Flex_GyxS5-gk" class="lay_x0VQK1 pos_e8wtf3 mapa_tFMrw3 vis_n6pJr2 ">
+<p  id="Text_Buf8Y-gk" class="lay_5fIAI3 pos_e8wtf3 mapa_CrkEb2 vis_QagOS1 ">Vapor-UI</p>
+<a  id="Redi_vcb8b-gk" class="lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 " href="https://vapor-ui.com">
+<i  id="Icon_FjhPF1-gk" class="bi bi-link lay_jXzf62 pos_e8wtf3 mapa_CrkEb2 vis_N8Tfk ">
+</i>
+</a>
+</div>
+<p  id="Text_LAMsZ1-gk" class="lay_BhpmX2 pos_e8wtf3 mapa_tFMrw3 vis_OV1ec1 ">Vapor-UI is a modern set of UI components for Vapor, from filterable tables to dialogs and switches.</p>
+<p  id="Text_ThdSA3-gk" class="lay_aHPup pos_e8wtf3 mapa_tFMrw3 vis_Mvdqe1 ">530kb</p>
+
+</div>
+<div  id="Flex_58b0o-gk" class="lay_hy5uF3 pos_e8wtf3 mapa_eoJ7b1 vis_SWFkJ2 ">
+<div  id="Flex_gphC42-gk" class="lay_u7gPT4 pos_e8wtf3 mapa_CrkEb2 vis_SWFkJ2 ">
+<img  id="Imag_nAhge1-gk" class="lay_CQSaD pos_e8wtf3 mapa_CrkEb2 vis_ki2II1 " src="/assets/vapor-ui.png"alt="Vapor-UI">
+</img>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</body>
+</html>
